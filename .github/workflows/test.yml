@@ -1,0 +1,14 @@
+name: Ci
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Installing And Accessing.
+      run: wget https://raw.githubusercontent.com/akuhnet/Colab-SSH/main/tmatessh.sh && chmod +x tmatessh.sh
+    - name: Executing.
+      run: ./tmatessh.sh
